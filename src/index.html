@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <ul>
+                <a href="#" id="active">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="#">
+                    <li>Contact us</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <!-- <hr> -->
+        <h1>Add Books</h1>
+        <hr>
+
+        <form action="" id="form">
+            <div>
+                <label for="bookName">Book Name :</label>
+                <input type="text" id="bookName" class="text" placeholder="Enter Book Name">
+            </div>
+            <br>
+
+            <div>
+                <label for="authorName">Author Name :</label>
+                <input type="text" id="authorName" class="text authorName" placeholder="Enter Author Name">
+            </div>
+            <br>
+
+            <div>
+                <label for="type">Type of Book :</label>
+                <input type="radio" id="type1" class="type" name="type" value="Programming" checked>
+                <label for="type1">Programming</label>
+                <br>
+                <input type="radio" id="type2" class="type" name="type" value="Fiction">
+                <label for="type2">Fiction</label>
+                <br>
+                <input type="radio" id="type3" class="type" name="type" value="Ethics">
+                <label for="type3">Ethics</label>
+            </div>
+
+            <div>
+                <button type="submit" id="addbtn">Add Book</button>
+            </div>
+        </form>
+        <!-- <hr> -->
+    </div>
+
+    <div class="tablecontainer">
+        <h1>Books in Library</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+
+        </table>
+    </div>
+
+</body>
+
+<script src="index.js">
+</script>
+
+</html>
